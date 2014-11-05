@@ -1,0 +1,157 @@
+body {
+    background-image: url(../img/background.jpg);
+    font-family: 'Open Sans', Helvetica, serif;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: #545154;
+}
+
+.container {
+    margin: 0 auto;
+    width: 700px;
+    height: 100%;
+}
+
+h1, h2, h3 {
+    color: #234d63;
+    text-align: center;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: -1px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 38px;
+}
+
+a {
+    color: #0088cc;
+}
+
+.noUnderline {
+    text-decoration:none;
+    color:#234d63;
+}
+
+/* Login Page */
+
+.loginWindow {
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 200px;
+    height: 180px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.roomNumberHeader {
+    font-size:16px;
+    text-align:center;
+    width:200px;
+    display:block;
+    margin: 0 auto;
+}
+
+.roomNumber {
+    font-size:22px;
+    text-align:center;
+    width:200px;
+    display:block;
+    margin: 0 auto;
+    font-weight:bold;
+}
+
+.loginWindow > .loginHeader {
+    margin: 0 0 20px 0;
+    font-size: 1.6em;
+    color: #234d63;
+}
+
+.loginWindow > .loginHeader > .headerURL {
+    text-align: left;
+    width: 90px;
+    text-decoration: none;
+
+}
+
+input[type=submit] {
+    border: 1px solid #f2f2f1;
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px 20px 10px 20px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    color: #6f93c7;
+    width: 130px;
+}
+
+input[type=text], input[type=email], input[type=password], textarea {
+    color: #bcbcbc;
+    border: 1px solid #d0d0d0;
+    background-color: #fcfcfc;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+/* Quiz Overview */
+
+.quizOverview {
+    width:300px;
+    margin: 0 auto;
+}
+
+.quizOverview > .quizTable {
+    width:300px;
+    text-align:center;
+    text-transform:capitalize;
+}
+
+.quizOverview > .quizTools {
+    font-size:70px;
+    text-align:center;
+    width:50px;
+    margin:0 auto;
+    display:block;
+    color:#545154;
+    text-decoration:none;
+}
+
+.quizOverview > .quizTitle {
+    font-size: 14px;
+    padding-right: 50px;
+}
+
+.quizOverview > .quizAttribute {
+    font-size: 12px;
+}
+
+/* Waiting for Quiz */
+.waitingForQuiz{
+
+}
+
+.studentHeader {
+    width:300px;
+    font-size:14px;
+    margin:0 auto;
+    text-align:center;
+    display:block;
+    margin-bottom:20px;
+}
+
+.block {
+    width:200px;
+    margin:0 auto;
+    text-align:center;
+}
+
+/* Current Quiz */
+.currentQuiz{
+
+}

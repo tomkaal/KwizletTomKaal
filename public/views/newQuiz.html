@@ -1,0 +1,48 @@
+<!--<table class="quizTable">-->
+<!--<form>-->
+<!--Quiz titel:<br><input type="text" ng-model="loginInfo.username"><br>-->
+<!--<div ng-repeat="question in questionList">-->
+<!--<input type="checkbox" value={{question._id}}> {{question.text}}-->
+<!--</div>-->
+<!--<input type="submit" value="Opslaan">-->
+<!--</form>-->
+<!--</table>-->
+
+<!--<div>-->
+<!--<span ng-repeat="question in questionList">-->
+<!--<label class="checkbox" for="{{question._id}}">-->
+<!--<input type="checkbox" ng-model="" name="group" id="{{question._id}}" />-->
+<!--{{question.text}}-->
+<!--</label>-->
+<!--</span>-->
+<!--console.log(-->
+<!--<pre ng-bind="selection.ids | json"></pre>-->
+<!--</div>-->
+
+<!--<div ng-controller="quizOverviewController">-->
+<!--<ul>-->
+<!--<li>-->
+<!--<select><option ng-repeat="question in questionList"> {{question.text}}</option></select>-->
+<!--[<a href ng-click="questionList.splice($index, 1)">X</a>]-->
+<!--</li>-->
+<!--<li>-->
+<!--[<a href ng-click="questionList.push({})">add</a>]-->
+<!--</li>-->
+<!--</ul>-->
+
+<!--</div>-->
+<div ng-controller="newQuizController">
+    <form ng-submit="addNewMovie()">
+        <div>
+            <label for="newQuizName">Quiz naam:</label>
+            <input ng-model="newQuizName" type="text" class="form-control" id="newQuizName" placeholder="Quiz naam">
+        </div>
+        <div ng-repeat="question in questionList"
+             ng-click="voegAanQuiz(question._id)">
+            <a href=""><i>{{question.text}}</i></a>
+        </div>
+        <button>sla op</button>
+
+    </form>
+
+</div>

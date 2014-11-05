@@ -1,0 +1,16 @@
+<h2>Quizes</h2>
+
+<div class="quizOverview">
+  <table class="quizTable">
+    <tr ng-repeat="quiz in quizList" class="quizListItem {{viewStyle}}">
+      <th class="quizTitle">
+        {{quiz.name}}
+      </th>
+      <td class="quizAttribute">
+        <button onclick="window.location.href='#'">
+          Open for students</button>
+      </td>
+    </tr>
+  </table>
+  <a class="quizTools" href="/#/newQuiz">+</a>
+</div>

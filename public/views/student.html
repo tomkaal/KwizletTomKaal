@@ -1,0 +1,24 @@
+<div ng-controller="loginController" id="blocksPage">
+
+{{message}}
+
+<div class="loginWindow">
+  <div class="loginHeader">
+    <a href="#" class="headerURL">
+      <strong>Student</strong>
+    </a>
+    |
+    <a href="/#/home" class="headerURL">
+      Teacher
+    </a>
+  </div>
+
+  <form ng-submit="studentLogin()">
+    Name<br>
+    <input type="text" ng-model="studentInfo.name"><br>
+    Room number
+    <input type="text" ng-model="studentInfo.room"><br><br>
+    <input type="submit" value="Join">
+  </form>
+</div>
+</div>

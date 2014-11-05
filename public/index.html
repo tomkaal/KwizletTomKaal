@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="kwizletApp">
+<head>
+    <title>Kwizlet</title>
+
+    <script src="library/angular.js"></script>
+    <script src="library/angular-route.js"></script>
+
+    <script src="js/kwizlet.js"></script>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+    <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+<div class="container">
+    <h1>
+    <a href="/#/home" class="noUnderline">
+        Kwizlet
+    </a>
+    </h1>
+    <ng-view></ng-view><br><br>
+    Admin Controller (ALLEEN VOOR DEVELOPMENT)
+    <ul>
+        <li><a href="/#/quizOverview">QuizOverview</a></li>
+    </ul>
+</div>
+</body>
+</html>

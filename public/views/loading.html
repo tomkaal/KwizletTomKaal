@@ -1,0 +1,15 @@
+<div class="waitingForQuiz">
+<h2>Waiting till the teacher starts</h2>
+
+    {{$scope.name}}
+
+    <div id="blocksField" ng-keydown="key($event)">
+        <span class="studentHeader">Students in this room</span>
+        <div class="block"
+             ng-repeat="student in studentSet">
+            {{student.name}}
+        </div>
+    </div>
+
+
+</div>
